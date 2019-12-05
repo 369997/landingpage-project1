@@ -1,0 +1,23 @@
+// Сброс базовых стилей браузера
+@import './common/normolize.css';
+
+// Все цвета сайта
+@import './colors.scss';
+
+// Шрифты для сайта
+@import './fonts/fonts.scss';
+
+// Базовые стили
+@import './common/base.scss';
+
+// BUTTONS
+@import './buttons/buttons.scss';
+
+// MENU
+@import './header/menu.scss';
+
+// HEADER
+@import './header/header.scss';
+
+// ALL SECTION STYLES
+@import './general/main.scss';

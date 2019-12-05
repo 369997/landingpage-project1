@@ -1,0 +1,16 @@
+.btn {
+	text-transform: uppercase;
+	font-weight: 100;
+	padding: 18px 34px;
+	border: 2px solid #fff;
+	color: #ffffff;
+	background-color: transparent;
+	outline: none;
+	cursor: pointer;
+	transition: 0.3s all;
+
+	&:hover {
+		background-color: #ffffff;
+		color: $accent;
+	}
+}
