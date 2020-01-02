@@ -3,7 +3,8 @@
         padding: 100px 0;
     }
 
-    &__first, &__row {
+    &__first,
+    &__row {
         display: flex;
     }
 
@@ -12,7 +13,7 @@
         justify-content: space-between;
         position: relative;
 
-        :hover{
+        :hover {
             .posts_red {
                 color: $accent;
             }
@@ -30,7 +31,7 @@
             &:after {
                 content: '';
                 position: absolute;
-                border-bottom: 0px solid #ccc; 
+                border-bottom: 0px solid #ccc;
             }
         }
 
@@ -48,7 +49,7 @@
     &__right {
         width: 55%;
     }
-    
+
     &__pic {
         background: #ccc;
         min-width: 320px;
@@ -80,8 +81,8 @@
     }
 
     &__maintitle {
-       text-transform: uppercase; 
-       font-size: 16px;
+        text-transform: uppercase;
+        font-size: 16px;
     }
 
     &__subtitle {
@@ -90,8 +91,8 @@
     }
 
     &__text {
-       padding-top: 25px; 
-       
+        padding-top: 25px;
+
     }
 
     &__p {

@@ -1,6 +1,9 @@
 // Сброс базовых стилей браузера
 @import './common/normolize.css';
 
+// mixins and media
+@import './mixins/';
+
 // Все цвета сайта
 @import './colors.scss';
 
