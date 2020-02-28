@@ -1,3 +1,8 @@
+##  Приветствую и делюсь ссылочкой на проект
+
+https://369997.github.io/landingpage-project1/.
+
+
 # Webpack Frontend Starterkit
 
 [![Dependabot badge](https://flat.badgen.net/dependabot/wbkd/webpack-starter?icon=dependabot)](https://dependabot.com/)

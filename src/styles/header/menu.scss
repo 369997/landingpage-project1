@@ -4,6 +4,14 @@
 	padding: 40px 0;
 	z-index: 100;
 
+	@include for-size(tablet) {
+		padding: 30px 20px;
+	}
+
+	@include for-size(laptop) {
+		padding: 30px 20px;
+	}
+
 	@include for-size(phone) {
 		display: block;
 		text-align: center;
@@ -39,6 +47,12 @@
 	}
 
 	&-mobile {
+		display: none;
+
+		@include for-size(phone) {
+			display: block;
+		}
+
 		&__title {
 			margin: 20px 0;
 			border-bottom: 1px dashed;
@@ -60,6 +74,18 @@
 			}
 
 			@include for-size(tablet) {
+				display: none;
+			}
+
+			@include for-size(laptop) {
+				display: none;
+			}
+
+			@include for-size(desktop) {
+				display: none;
+			}
+
+			@include for-size(desktop-big) {
 				display: none;
 			}
 		}
@@ -106,24 +132,6 @@
 					color: $primary;
 					transition: 0.2s all;
 				}
-			}
-		}
-
-		@include for-size(tablet) {
-			.menu__ul {
-				display: none;
-			}
-		}
-
-		@include for-size(laptop) {
-			.menu__ul {
-				display: none;
-			}
-		}
-
-		@include for-size(desktop) {
-			.menu__ul {
-				display: none;
 			}
 		}
 	}

@@ -1,6 +1,10 @@
 .service {
   padding: 100px 0;
 
+  @include for-size(phone) {
+    padding: 50px 0;
+  }
+
   &__header {
     text-align: center;
   }
@@ -32,12 +36,32 @@
     flex-wrap: wrap;
     justify-content: space-between;
     padding-top: 45px;
+
+    @include for-size(phone) {
+      justify-content: center;
+      padding-top: 0;
+
+    }
+
+    @include for-size(tablet) {
+      justify-content: center;
+      padding-top: 0;
+
+    }
   }
 
   &__item {
     width: 30%;
     text-align: center;
     min-width: 320px;
+
+    @include for-size(phone) {
+      margin-bottom: 20px;
+    }
+
+    @include for-size(tablet) {
+      margin-bottom: 20px;
+    }
   }
 
   &__itemicon {

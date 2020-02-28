@@ -1,29 +1,29 @@
-.banner{
+.banner {
     height: 368px;
     min-height: 100%;
 
-    &__wrap{
+    &__wrap {
         position: relative;
         background: url('../img/our-works.png') center center no-repeat;
         height: 100%;
         background-size: cover;
 
-        
 
-            &:after{
-                content: '';
-                position: absolute;
+
+        &:after {
+            content: '';
+            position: absolute;
             background: rgba($accent, .6);
             height: 100%;
             width: 100%;
             top: 0;
             left: 0;
             z-index: 1;
-            }
-        
+        }
+
     }
 
-    &__text{
+    &__text {
         position: absolute;
         top: 50%;
         left: 50%;
@@ -34,14 +34,18 @@
         font-weight: 100;
         text-align: center;
         line-height: 44px;
-        
+
+        @include for-size(phone) {
+            font-size: 16px;
+        }
+
     }
 
-    &__title{
+    &__title {
         font-weight: 100;
     }
 
-    &__btn{
+    &__btn {
         margin-top: 50px;
         outline: none;
         border: 1px solid #fff;
@@ -50,6 +54,11 @@
         font-style: 18px;
         text-transform: uppercase;
         padding: 14px 25px;
+
+        @include for-size(phone) {
+            padding: 5px 5px;
+            font-size: 16px;
+        }
 
     }
 }

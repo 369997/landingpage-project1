@@ -4,6 +4,10 @@
   display: flex;
   align-items: center;
 
+  @include for-size(phone) {
+    height: 200px;
+  }
+
   &__wrap {
     color: #fff;
     display: flex;
